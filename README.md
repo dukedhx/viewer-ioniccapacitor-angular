@@ -8,21 +8,14 @@
 
 Forge Viewer Ionic/Capacitor Sample In Angular & TypeScript - Cross platform, lazy dependencies, load bundled models etc.
 
-Original post:
-
-# Why Capacitor?
-
-// TODO
-
-With Plugins, a web app can access the full power of the Native APIs, doing everything a traditional native app can. Plugins are especially great for wrapping common native operations that might use very different APIs across platforms, while exposing a consistent, cross-platform API to JavaScript.
-
-To create a refresh Ionic/Capacitor:
-- Install Node.js/Ionic
-- Create the project with the Capacitor flag: `ionic start appName --capacitor`
+Original post: https://forge.autodesk.com/blog/greet-year-mouse-your-first-ioniccapacitor-cross-platform-viewer-app-angular-typescript
 
 # Architecture
 
-// TODO
+In our sample there's one home view with one Viewer component inside that the app would route to by default. With our Forge dependency loader service this can scale easily - you can request to load the Viewer's dependencies dynamically as needed and as the user navigates back and forth or your Viewer instances grow in number your code signature remains the same and the dependencies would always get loaded once, with "thenables" available when they completes loading to spin up your Viewer workflows:
+
+![sb](https://flint-prodcms-forge.s3.amazonaws.com/prod/s3fs-public/inline-images/95FEE793-61CE-4CCB-9A6B-08BCE909AA40.jpeg)
+![sb](https://flint-prodcms-forge.s3.amazonaws.com/prod/s3fs-public/inline-images/Untitled_7.png)
 
 # Setup and Run
 
